@@ -1,12 +1,5 @@
 //Patrick Collins (patricol)
 
-/*
-refactoring work:
-have paddle and ball positions be the center of the sprite, not the corner. makes the calculations easier.
-have paddles take up same percentage of the game screen as it resizes.
-standardize indentation
-*/
-
 #include <SFML/Graphics.hpp>
 #include <SFML/System/Time.hpp>
 #include <algorithm>
