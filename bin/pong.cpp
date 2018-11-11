@@ -317,7 +317,7 @@ struct GameState CheckForAWinner(struct GameState gs) {
 struct GameState HandleMainMenuInput(struct Inputs new_inputs, struct Inputs last_inputs, struct GameState gs) {
     int numoptions[] = {5,5,3,3,3,3,4,2};
     if (new_inputs.p[0].ul && !last_inputs.p[0].ul) {
-        gs.selected = (gs.selected-1) % 9;
+        gs.selected = (gs.selected+8) % 9;
     }
     if (new_inputs.p[0].dr && !last_inputs.p[0].dr) {
         gs.selected = (gs.selected+1) % 9;
